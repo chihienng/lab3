@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWA Help Desk Appointment</title>
+
+   
+</head>
+<body>
+
+<div class="container">
+
+    <a href="https://www.swin.edu.au">
+        <img src="images/logo.png" alt="Swinburne University of Technology">
+    </a>
+
+    <h1>CWA Help Desk Appointment</h1>
+    
+    <p>
+        The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.
+    </p>
+
+    <p>
+        Check Blackboard for when CWA tutors will be there.
+    </p>
+
+    <form>
+
+        <!-- Student Details -->
+        <fieldset>
+            <legend>Student details</legend>
+
+            <label for="studentID">Student ID</label>
+            <input
+                type="text"
+                id="studentID"
+                name="studentID"
+                pattern="[0-9]{7,10}"
+                required
+            >
+
+            <br><br>
+
+            <label for="givenName">Given Name</label>
+            <input
+                type="text"
+                id="givenName"
+                name="givenName"
+                maxlength="15"
+                pattern="[A-Za-z]+"
+                required
+            >
+
+            <label for="familyName">Family Name</label>
+            <input
+                type="text"
+                id="familyName"
+                name="familyName"
+                maxlength="15"
+                pattern="[A-Za-z]+"
+                required
+            >
+        </fieldset>
+
+
+        <!-- Unit -->
+        <fieldset>
+            <legend>Your unit</legend>
+
+            <input
+                type="radio"
+                id="cos10011"
+                name="unit"
+                value="COS10011"
+                required
+            >
+            <label for="cos10011">COS10011</label>
+
+            <input
+                type="radio"
+                id="cos60004"
+                name="unit"
+                value="COS60004"
+            >
+            <label for="cos60004">COS60004</label>
+
+            <input
+                type="radio"
+                id="cos60007"
+                name="unit"
+                value="COS60007"
+            >
+            <label for="cos60007">COS60007</label>
+
+            <br><br>
+
+            <label for="tutor">Your Tutor</label>
+
+            <select id="tutor" name="tutor" required>
+                <option value="">Please Select</option>
+                <option value="john">John</option>
+                <option value="sarah">Sarah</option>
+                <option value="michael">Michael</option>
+                <option value="emma">Emma</option>
+            </select>
+        </fieldset>
+
+
+        <!-- Issue -->
+        <fieldset>
+            <legend>Issue</legend>
+
+            <input type="checkbox" id="html" name="issue" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="issue" value="CSS" checked>
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="javascript" name="issue" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <input type="checkbox" id="php" name="issue" value="PHP">
+            <label for="php">PHP</label>
+
+            <input type="checkbox" id="mysql" name="issue" value="MySQL">
+            <label for="mysql">MySQL</label>
+
+            <br><br>
+
+            <label for="description">Description of Issue</label>
+            <br>
+
+            <textarea
+                id="description"
+                name="description"
+                rows="5"
+                cols="35"
+                placeholder="Write description of your problem here..."
+            ></textarea>
+        </fieldset>
+
+
+        <!-- Preferred Date / Time -->
+        <fieldset>
+            <legend>Preferred Date / Time</legend>
+
+            <label for="date">Date</label>
+            <input
+                type="date"
+                id="date"
+                name="date"
+            >
+
+            <br>
+
+            <label for="time">Time</label>
+            <input
+                type="time"
+                id="time"
+                name="time"
+            >
+        </fieldset>
+
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <input type="submit" value="Book">
+            <input type="reset" value="Reset form">
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
